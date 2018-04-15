@@ -1,3 +1,4 @@
+[![](https://images.microbadger.com/badges/image/elradix/rpi-monitor.svg)](https://microbadger.com/images/elradix/rpi-monitor "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/elradix/rpi-monitor.svg)](https://microbadger.com/images/elradix/rpi-monitor "Get your own version badge on microbadger.com")
 # About this Repo
 
 This is the Git repo of the Docker image for [rpi-monitor](https://hub.docker.com/r/michaelmiklis/rpi-monitor/). 
