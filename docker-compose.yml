@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    rpi:
+        devices:
+            - /dev/vchiq
+        volumes:
+            - '/opt/vc:/opt/vc'
+            - '/boot:/boot'
+            - '/sys:/dockerhost/sys:ro'
+            - '/etc:/dockerhost/etc:ro'
+            - '/proc:/dockerhost/proc:ro'
+            - '/usr/lib:/dockerhost/usr/lib:ro'
+            - '/opt/docker/rpi-monitor/rrd:/var/lib/rpimonitor/stat/' 
+        ports:
+            - '8888:8888'
+        container_name: rpi-monitor
+        image: elradix/rpi-monitor:latest
+        restart: unless-stopped
+
+
+
