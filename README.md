@@ -1,8 +1,8 @@
 [![](https://images.microbadger.com/badges/image/elradix/rpi-monitor.svg)](https://microbadger.com/images/elradix/rpi-monitor "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/elradix/rpi-monitor.svg)](https://microbadger.com/images/elradix/rpi-monitor "Get your own version badge on microbadger.com")
 # About this Repo
 
-This is the Git repo of the Docker image for [rpi-monitor](https://hub.docker.com/r/michaelmiklis/rpi-monitor/). 
-See [the Docker Hub page](https://hub.docker.com/r/michaelmiklis/rpi-monitor/) for the full readme on how to use this Docker 
+This is the Git repo of the Docker image for [rpi-monitor](https://github.com/elRadix/rpi-monitor). 
+See [the Docker Hub page](https://hub.docker.com/r/elradix/rpi-monitor/) for the full readme on how to use this Docker 
 image and for information regarding contributing and issues.
 
 docker-rpi-monitor
@@ -26,7 +26,7 @@ the Raspberry PI's vchiq and vcsm device needs to be mapped to the container to 
 
 Quickstart
 ----------
-	docker run --device=/dev/vchiq --device=/dev/vcsm --volume=/opt/vc:/opt/vc --volume=/boot:/boot --volume=/sys:/dockerhost/sys:ro --volume=/etc:/dockerhost/etc:ro --volume=/proc:/dockerhost/proc:ro --volume=/usr/lib:/dockerhost/usr/lib:ro -p=8888:8888 --name="rpi-monitor" -d  elradix/rpi-monitor:latest
+docker run --device=/dev/vchiq --device=/dev/vcsm --volume=/opt/vc:/opt/vc --volume=/boot:/boot --volume=/sys:/dockerhost/sys:ro --volume=/etc:/dockerhost/etc:ro --volume=/proc:/dockerhost/proc:ro --volume=/usr/lib:/dockerhost/usr/lib:ro -p=8888:8888 --name="rpi-monitor" -d  elradix/rpi-monitor:latest
 	
 Access
 ----------
